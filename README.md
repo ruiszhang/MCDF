@@ -36,7 +36,7 @@ Multi-Channel Data Formatter，多通道数据整形器设计
     再根据情况确定是否发出发送请求（数据是否多于数据包长度）。
     
  测试波形分析
- [slave_fifo波形分析]
+ [slave_fifo波形分析](https://github.com/CYYYC13/MCDF/blob/main/slave_fifo/slave_fifo.pdf)
 
 &nbsp;
     
@@ -56,7 +56,7 @@ Multi-Channel Data Formatter，多通道数据整形器设计
     总线数据cmd_data_i只有低6位被使用。
     
 测试波形分析
-[control_registers波形分析]
+[control_registers波形分析](https://github.com/CYYYC13/MCDF/blob/main/control_registers/control_registers.pdf)
    
 &nbsp;
     
@@ -72,7 +72,7 @@ Multi-Channel Data Formatter，多通道数据整形器设计
     若各通道优先级相同，则发送编号最低的通道数据。
     
 测试波形分析
-[arbiter波形分析]
+[arbiter波形分析](https://github.com/CYYYC13/MCDF/blob/main/arbiter/arbiter.pdf)
 
 &nbsp;
     
@@ -94,7 +94,7 @@ Multi-Channel Data Formatter，多通道数据整形器设计
     不变，知道数据包发送结束。
     
 测试波形分析
-[formatter波形分析]
+[formatter波形分析](https://github.com/CYYYC13/MCDF/blob/main/formatter/formatter.pdf)
 
 &nbsp;
     
@@ -117,7 +117,7 @@ Multi-Channel Data Formatter，多通道数据整形器设计
     需要两个数据包长度的时钟周期。
     
 测试波形分析
-[MCDF_top波形分析]
+[MCDF_top波形分析](https://github.com/CYYYC13/MCDF/blob/main/MCDF_top/MCDF.pdf)
 
 &nbsp;
     
