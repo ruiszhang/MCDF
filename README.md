@@ -105,10 +105,15 @@ Multi-Channel Data Formatter，多通道数据整形器设计
 功能:
 
     将系统命令由cmd_data_i模块写入control_registers，由control_registers给出对三个slave_fifo和arbiter的
+    
     控制信号，控制数据的写入。外部数据chx_data_i写入slave_fifo且达到一个完整的数据包后，slave_fifo向
+    
     arbiter发出发送数据请求，arbiter根据发送数据请求和优先级决定将哪个通道的数据输出到formatter中，
+    
     formatter收到一个完整的数据包之后将fmt_req_o置高，表明准备发送数据，当等到外界的fmt_grant_i信号，
+    
     则开始连续发送一个完整的数据包，中间没有空闲。数据开始输入slave_fifo到数据开始从formatter中输出至少
+    
     需要两个数据包长度的时钟周期。
     
 测试波形分析
